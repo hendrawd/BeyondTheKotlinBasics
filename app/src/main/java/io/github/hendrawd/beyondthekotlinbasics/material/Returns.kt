@@ -1,9 +1,6 @@
-package io.github.hendrawd.beyondthekotlinbasics.view
+package io.github.hendrawd.beyondthekotlinbasics.material
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-
-class ReturnsActivity : AppCompatActivity() {
+class Returns {
 
     private fun containingFunction() {
         val numbers = 1..100
@@ -18,12 +15,9 @@ class ReturnsActivity : AppCompatActivity() {
             }
         })
         println("Hello!")
-
-
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    fun main(args: Array<String>) {
         containingFunction()
     }
 }

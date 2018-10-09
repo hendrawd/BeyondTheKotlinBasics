@@ -1,13 +1,8 @@
-package io.github.hendrawd.beyondthekotlinbasics.view
+package io.github.hendrawd.beyondthekotlinbasics.material
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+class Others {
 
-class OthersActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
+    fun main(args: Array<String>) {
         // run, with, apply, also, let
 //        var aString = "hendra emang ganteng sekali tiada tara"
         println(StringContainer().apply {

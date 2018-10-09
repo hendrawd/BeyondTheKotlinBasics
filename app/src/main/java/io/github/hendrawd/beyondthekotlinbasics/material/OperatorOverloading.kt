@@ -1,9 +1,6 @@
-package io.github.hendrawd.beyondthekotlinbasics.view
+package io.github.hendrawd.beyondthekotlinbasics.material
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-
-class OperatorOverloadingActivity : AppCompatActivity() {
+class OperatorOverloading {
 
     data class Time(val hours: Int, val mins: Int) {
 
@@ -22,9 +19,7 @@ class OperatorOverloadingActivity : AppCompatActivity() {
         stringBuilder.forEach { this.append(it) }
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
+    fun main(args: Array<String>) {
         val newTime = Time(10, 40) + Time(3, 20)
         println(newTime)
 

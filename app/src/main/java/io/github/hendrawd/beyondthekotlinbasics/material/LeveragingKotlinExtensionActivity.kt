@@ -1,4 +1,4 @@
-package io.github.hendrawd.beyondthekotlinbasics.view
+package io.github.hendrawd.beyondthekotlinbasics.material
 
 import android.content.ActivityNotFoundException
 import android.content.Intent

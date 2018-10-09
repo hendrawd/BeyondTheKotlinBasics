@@ -9,28 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.LeveragingKotlinExtensionActivity">
+        <activity android:name=".material.LeveragingKotlinExtensionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".view.CallingExtensionFunctionFromJava"/>
-        <activity
-            android:name=".view.FunctionActivity"
-            android:label="@string/title_activity_function"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".view.InfixActivity">
-        </activity>
-        <activity android:name=".view.IsValReallyImmutableActivity"/>
-        <activity android:name=".view.OperatorOverloadingActivity">
-        </activity>
-        <activity android:name=".view.ReturnsActivity">
-        </activity>
-        <activity android:name=".view.OthersActivity">
-        </activity>
+        <activity android:name=".material.CallingExtensionFunctionFromJava"/>
     </application>
 
 </manifest>

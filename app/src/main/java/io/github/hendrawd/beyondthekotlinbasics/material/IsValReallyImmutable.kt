@@ -1,13 +1,11 @@
-package io.github.hendrawd.beyondthekotlinbasics.view
+package io.github.hendrawd.beyondthekotlinbasics.material
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import java.util.*
 
 /**\
  * @author hendrawd on 30 Sep 2018
  */
-class IsValReallyImmutableActivity : AppCompatActivity() {
+class IsValReallyImmutable {
 
     class RandomValue {
         val content: Int get() = Random().nextInt()
@@ -18,8 +16,7 @@ class IsValReallyImmutableActivity : AppCompatActivity() {
         val content: Int get() = ++realVal
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    fun main(args: Array<String>) {
         // Please refer to links below to get the concept
         // https://kotlinlang.org/docs/reference/properties.html
         // https://artemzin.com/blog/kotlin-val-does-not-mean-immutable-it-just-means-readonly-yeah/

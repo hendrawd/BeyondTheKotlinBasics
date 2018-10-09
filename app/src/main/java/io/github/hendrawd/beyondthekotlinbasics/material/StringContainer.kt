@@ -1,4 +1,4 @@
-package io.github.hendrawd.beyondthekotlinbasics.view
+package io.github.hendrawd.beyondthekotlinbasics.material
 
 /**
  * @author hendrawd on 30 Sep 2018

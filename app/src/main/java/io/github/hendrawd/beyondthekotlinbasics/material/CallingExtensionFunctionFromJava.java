@@ -1,4 +1,4 @@
-package io.github.hendrawd.beyondthekotlinbasics.view;
+package io.github.hendrawd.beyondthekotlinbasics.material;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
