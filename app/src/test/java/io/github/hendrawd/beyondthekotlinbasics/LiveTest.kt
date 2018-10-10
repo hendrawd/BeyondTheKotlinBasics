@@ -2,6 +2,8 @@ package io.github.hendrawd.beyondthekotlinbasics
 
 import io.github.hendrawd.beyondthekotlinbasics.material.IsValReallyImmutable
 import io.github.hendrawd.beyondthekotlinbasics.material.StringContainer
+import io.github.hendrawd.beyondthekotlinbasics.material.reified.BaseResponseModel
+import io.github.hendrawd.beyondthekotlinbasics.material.reified.toKotlinObject
 import org.junit.Test
 
 class LiveTest {
@@ -83,6 +85,14 @@ class LiveTest {
 //        operate(arrayOf("a", "b"))
 //        operate("a", "b")
         operateVarargs("a", "b")
+    }
+
+    @Test
+    fun testReifiedInAction(){
+        val jsonString = "{\"status_code\":0,\"message\":\"hendrawd ganteng\"}"
+        val baseResponseModel = jsonString.toKotlinObject<BaseResponseModel>()
+        println(baseResponseModel.status)
+        println(baseResponseModel.message)
     }
 
     private fun operate(args: Array<String>) {
