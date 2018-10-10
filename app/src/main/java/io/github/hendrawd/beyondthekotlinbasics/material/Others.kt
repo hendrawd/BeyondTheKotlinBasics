@@ -27,4 +27,16 @@ class Others {
     private fun operateVarargs(vararg args: String) {
         args.forEach { println(it) }
     }
+
+    private fun spreadOperator(){
+        // * = Spread Operator
+        // from https://kotlinlang.org/docs/reference/functions.html#variable-number-of-arguments-varargs:
+        // When we call a vararg-function, we can pass arguments one-by-one,
+        // e.g. asList(1, 2, 3), or, if we already have an array
+        // and want to pass its contents to the function,
+        // we use the spread operator (prefix the array with *):
+        operateVarargs("satu", "kucing", "paijo", "budi")
+        val array = arrayOf("satu", "kucing", "paijo", "budi")
+        operateVarargs(*array)
+    }
 }
