@@ -16,4 +16,7 @@ Wrap up:
 * Memahami konsep local return, function return, label return
 * Memahami konsep run, with, apply, also, let
 * Memahami konsep varargs
+* Memahami konsep spread operator
+* Memahami konsep @JvmOverloads annotation dan init block
 * Memahami konsep looping menggunakan repeat dan IntRange: 1..6, 1 until 6
+* Memahami konsep inline dan reified
