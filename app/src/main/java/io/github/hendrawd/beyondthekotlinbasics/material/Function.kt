@@ -1,6 +1,7 @@
 package io.github.hendrawd.beyondthekotlinbasics.material
 
 class Function {
+
     fun main(args: Array<String>) {
         // example from dicoding
         val nameFunction: (String, String) -> String = { realName, heroName -> "My name is $realName, you can call me $heroName" }

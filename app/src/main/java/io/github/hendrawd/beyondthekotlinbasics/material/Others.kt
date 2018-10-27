@@ -4,15 +4,17 @@ class Others {
 
     fun main(args: Array<String>) {
         // run, with, apply, also, let
-//        var aString = "hendra emang ganteng sekali tiada tara"
         println(StringContainer().apply {
             add((1..6).toString())
         })
 
         // compare value and object
-//        val otherString = "other string"
-//        val isStringsEqual = aString == otherString
-        // kenapa pake ==?, kenapa ga pake equals?
+        val otherString = "other string"
+        val aString = "hendra emang ganteng sekali tiada tara"
+        val isStringsEqual = aString == otherString
+        val isObjectsEqual = aString === otherString
+        // == used to compare value
+        // === used to compare object
 
         // varargs
         operate(arrayOf("a", "b"))
@@ -37,6 +39,7 @@ class Others {
         // we use the spread operator (prefix the array with *):
         operateVarargs("satu", "kucing", "paijo", "budi")
         val array = arrayOf("satu", "kucing", "paijo", "budi")
-        operateVarargs(*array)
+        val list = listOf("satu", "kucing", "paijo", "budi")
+        operateVarargs(*list.toTypedArray())
     }
 }

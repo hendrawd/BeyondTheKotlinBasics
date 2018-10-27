@@ -41,12 +41,13 @@ class LeveragingKotlinExtensionActivity : AppCompatActivity() {
         // Case 2: convert text with html format to get the html style
         // without
         val htmlString = "Saya emang <b>ganteng</b>"
-        var formattedText = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            Html.fromHtml(htmlString, Html.FROM_HTML_MODE_LEGACY)
-        } else {
-            @Suppress("DEPRECATION")
-            Html.fromHtml(htmlString)
-        }
+        var formattedText =
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    Html.fromHtml(htmlString, Html.FROM_HTML_MODE_LEGACY)
+                } else {
+                    @Suppress("DEPRECATION")
+                    Html.fromHtml(htmlString)
+                }
         // with
         formattedText = htmlString.fromHtml()
 
@@ -62,10 +63,10 @@ class LeveragingKotlinExtensionActivity : AppCompatActivity() {
 
         // Case 4: check if a String contains at least 1 number
         // without
-//        val stringHasNumber: Boolean = "this is a string and has 1 number"
-//                .contains("\\d+".toRegex())
+        val stringHasNumberWithout: Boolean = "this is a string and has 1 number"
+                .contains("\\d+".toRegex())
         // with
-        val stringHasNumber: Boolean = "this is a string and has 1 number"
+        val stringHasNumberWith: Boolean = "this is a string and has 1 number"
                 .hasNumber
     }
 }
