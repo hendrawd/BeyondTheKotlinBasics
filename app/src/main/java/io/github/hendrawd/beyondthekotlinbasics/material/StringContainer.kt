@@ -9,4 +9,8 @@ class StringContainer {
     fun add(stringToAdd: String) {
         content += stringToAdd
     }
+
+    override fun toString(): String {
+        return content
+    }
 }

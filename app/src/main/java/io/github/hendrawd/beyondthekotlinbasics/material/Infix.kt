@@ -1,5 +1,8 @@
 package io.github.hendrawd.beyondthekotlinbasics.material
 
+// import io.github.hendrawd.beyondthekotlinbasics.material.Suit.HEARTS
+// import io.github.hendrawd.beyondthekotlinbasics.material.Rank.QUEEN
+
 data class Card(val rank: Rank, val suit: Suit)
 enum class Suit {
     HEARTS,
@@ -13,12 +16,10 @@ enum class Rank {
     SIX, SEVEN, EIGHT, NINE,
     TEN, JACK, QUEEN, KING, ACE;
 
-    // simplify 1: with import and function
+//     simplify 1: with import and function
 //     fun of(suit: Suit) = Card(this, suit)
 
     // simplify 2: with import and infix function
-//    import io.github.hendrawd.beyondthekotlinbasics.view.Rank.QUEEN
-//    import io.github.hendrawd.beyondthekotlinbasics.view.Suit.HEARTS
 //    infix fun of(suit: Suit) = Card(this, suit)
 }
 

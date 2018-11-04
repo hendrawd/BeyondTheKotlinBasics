@@ -3,7 +3,7 @@ package io.github.hendrawd.beyondthekotlinbasics.material
 class Returns {
 
     private fun containingFunction() {
-        val numbers = 1..100
+        val numbers = 1..100 // int range
 //        aLabel@
         numbers.forEach(fun(element) {
             if (element % 5 == 0) {

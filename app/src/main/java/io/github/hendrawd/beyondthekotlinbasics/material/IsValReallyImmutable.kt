@@ -2,7 +2,7 @@ package io.github.hendrawd.beyondthekotlinbasics.material
 
 import java.util.*
 
-/**\
+/**
  * @author hendrawd on 30 Sep 2018
  */
 class IsValReallyImmutable {
